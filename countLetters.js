@@ -10,10 +10,10 @@ const countLetters = function(string) {
   const results = {};
 
   for (let letter of string) {
-    if (letter !== " ") {
-      if (results[letter]) {
+    if (letter !== " ") { //if letter is space, it will not go into latter blocks, it will loop next letter
+      if (results[letter]) { //if the value at the current letter position exists, increment that value by 1
         results[letter] += 1;
-      } else {
+      } else { //if there is not value at current letter postiion, it is set to 1
         results[letter] = 1;
       }
     }
