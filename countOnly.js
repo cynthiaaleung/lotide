@@ -10,7 +10,7 @@ const countOnly = function(allItems, itemsToCount) {
   const results = {};
 
   for (const item of allItems) {
-    if (itemsToCount[item]) {
+    if (itemsToCount[item]) { //will only go into this code block if value is true
       if (results[item]) {
         results[item] += 1;
       } else {
