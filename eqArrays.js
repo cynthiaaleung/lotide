@@ -11,7 +11,7 @@ const eqArrays = function(firstArray, secondArray) {
     return false;
   }
   for (let i = 0; i < firstArray.length; i++) {
-    if (!secondArray.includes(firstArray[i])) {
+    if (!secondArray.includes(firstArray[i])) { //includes() checks whether the array includes certain values, will return a boolean
       return false;
     }
   }
