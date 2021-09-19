@@ -21,9 +21,9 @@ const assertArraysEqual = function(actual, expected) {
 
 const without = function(sourceArray, itemsToRemove) {
   let finalArray = [];
-  for (var i = 0; i < sourceArray.length; i++) {
+  for (let i = 0; i < sourceArray.length; i++) {
     let toBeAdded = true;
-    for (var j = 0; j < itemsToRemove.length; j++) {
+    for (let j = 0; j < itemsToRemove.length; j++) {
       if (sourceArray[i] === itemsToRemove[j]) {
         toBeAdded = false;
       }
@@ -35,10 +35,10 @@ const without = function(sourceArray, itemsToRemove) {
   return finalArray;
 };
 
-// alternative solution 
+// alternative solution
 const withoutAlternateSolution = function(sourceArray, itemsToRemove) {
   let finalArray = [];
-  for (var i = 0; i < sourceArray.length; i++) {
+  for (let i = 0; i < sourceArray.length; i++) {
     if (itemsToRemove.includes(sourceArray[i]) === false) {
       finalArray.push(sourceArray[i]);
     }
@@ -60,7 +60,7 @@ without(words, ["lighthouse"]); // no need to capture return value for this test
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 // Tests for alternative
-console.log("------------ Alternative testing ------------------")
+console.log("------------ Alternative testing ------------------");
 assertArraysEqual(withoutAlternateSolution([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(withoutAlternateSolution(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 assertArraysEqual(withoutAlternateSolution([1, 2, 3], []), [1, 2, 3]);
