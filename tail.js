@@ -7,10 +7,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
+const words = ["Yo Yo", "Lighthouse", "Labs",];
 
 const tail = function(words) {
-  const tailArray = words.slice(1, 3);
+  const tailArray = words.slice(1);
   return tailArray;
 };
 
