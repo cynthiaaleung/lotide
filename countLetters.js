@@ -23,4 +23,4 @@ const countLetters = function(string) {
 
 console.log(countLetters("lighthouse in the house"));
 console.log(countLetters("LHL"));
-console.log(countLetters("Bootcamp"));
+console.log(countLetters("Boot camp"));
