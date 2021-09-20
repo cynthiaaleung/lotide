@@ -46,3 +46,4 @@ assertArraysEqual(map(nums1, nums1 => nums1 * 2), [2, 4, 10, 14, 18]);
 assertArraysEqual(map(words2, word2 => word2[0] + word2[1]), ["wh", "is", "yo", "na"]);
 
 
+module.exports = map;
