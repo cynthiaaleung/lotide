@@ -16,6 +16,7 @@ const eqArrays = function(firstArray, secondArray) {
       return false;
     }
   }
+
   return true;
 };
 
